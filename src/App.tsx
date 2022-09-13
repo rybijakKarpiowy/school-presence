@@ -21,8 +21,7 @@ function App() {
 			const data = await res.json();
 			setPresence(data);
 		} else {
-			console.log(res.status);
-			console.log(res.json());
+			alert(res.text())
 		}
 
 		setLoading(false);
